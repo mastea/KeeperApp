@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 
 export default function CreateArea(props) {
   const [noteItem, setNoteItem] = useState({
@@ -34,7 +35,9 @@ export default function CreateArea(props) {
         rows="3"
         value={noteItem.content}
       />
-      <button onClick={handleSubmit}>Add</button>
+      <button onClick={handleSubmit}>
+        <AddIcon />
+      </button>
     </form>
   );
 }
